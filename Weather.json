@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Miami",
+    "Temperature": 25.49,
+    "Description": "few clouds"
+  },
+  {
+    "Name": "Toronto",
+    "Temperature": 4.04,
+    "Description": "few clouds"
+  },
+  {
+    "Name": "Texas",
+    "Temperature": 29.97,
+    "Description": "clear sky"
+  },
+  {
+    "Name": "Los Angeles",
+    "Temperature": 20.6,
+    "Description": "clear sky"
+  }
+]
