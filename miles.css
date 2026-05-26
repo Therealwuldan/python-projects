@@ -1,0 +1,26 @@
+body{
+    background-color : #FOFOFO;
+    font-family : Ariel, san-serif;
+    text-align : center;
+    padding : 50px;
+
+}
+
+
+h1 {
+    color : #333
+}
+
+
+input {
+    padding : 10px
+    font-size : 16px
+}
+
+button {
+    padding : 10px 20px;
+    background-color : #4CAF50;
+    color : white;
+    border : none;
+    cursor : pointer;
+    }
