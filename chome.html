@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Get Currency </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<body>
+    <h1>GET CURRENCY</h1>
+
+    <form method= "POST" action="/">
+        <input type="text" name = "base" placeholder = "Enter base currency">
+        <input type="text" name = "target" placeholder = "Enter target currency">
+        <input type="text" name = "amount" placeholder = "Enter amount">
+
+        <button type="submit"> Convert </button>
+    </form>
+    {% if result %}
+        <p> {{result}}</p>
+    {% endif %}
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
+
