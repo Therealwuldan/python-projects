@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///test.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///weather.db"
 
 db = SQLAlchemy(app)
 
@@ -13,8 +13,9 @@ class Search(db.Model):
 with app.app_context():
     db.create_all()
 
-    new_search = Search(city="Toronto")
-    db.session.add(new_search)
+    new_search1 = Search(city="Toronto")
+    new_search_2 = Search(city = "Miami")
+    db.session.add_all([new_search1,new_search_2])
     db.session.commit()
 
     all_searches = Search.query.all()

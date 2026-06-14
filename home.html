@@ -15,6 +15,10 @@
             <p>{{ weather['main']['temp'] }}°C</p>
             <p>{{ weather['weather'][0]['description'] }}</p>
         {% endif %}
+
+        {% for search in history %}
+    <p>{{ search.city }}</p>
+{% endfor %}
     </body>
 </html>
 
