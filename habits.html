@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Habit Tracker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='habits.css') }}">
+</head>
+
+<body>
+    <h1>Daily Habit Tracker</h1>
+
+    {% for habit in habits %}
+    <form method="POST" action="/">
+        <input type="hidden" name="habit_id" value="{{ habit.id }}">
+        {% if habit.completed %}
+            <p>✅ {{ habit.name }}</p>
+        {% else %}
+            <p>{{ habit.name }}</p>
+            <button type="submit">Mark Done</button>
+        {% endif %}
+    </form>
+{% endfor %}
+
+</body>
+
+</html>
+
